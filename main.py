@@ -52,7 +52,8 @@ for forecast in weather.forecasts:
 
 print(email.body)
 
-email.send_email(os.environ['SEND_EMAIL_LOGIN'], os.environ['SEND_EMAIL_PASSWORD'], "Daily Brief")
+email.send_email(os.environ['SEND_EMAIL_LOGIN'], os.environ['SEND_EMAIL_PASSWORD'], "Daily Brief",
+                 os.environ['RECEIVE_EMAIL'])
 
 # send
 # ticker, % change, up or down, articles title & description x3
